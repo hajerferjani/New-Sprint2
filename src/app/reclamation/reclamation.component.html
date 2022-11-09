@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<body>
+
+
+    <app-header></app-header>
+
+
+<!-- Page info -->
+<div class="page-top-info">
+  <div class="container">
+    <h4>RECLAMATION</h4>
+    <div class="site-pagination">
+      <a href="">Acceuil</a> /
+      <a href="">votre reclamation</a>
+    </div>
+  </div>
+</div>
+<!-- Page info end -->
+
+    <div class="collapse1" id="collapseExample1">
+      <div class="content">
+
+          <div class="card">
+            <div class="row align-items-stretch no-gutters contact-wrap " >
+              <div class="col-md-12">
+                <div class="form h-100">
+                  <h3>RECLAMER</h3><br>
+
+                  <form class="checkout-form" method="post" id="contactForm" name="contactForm">
+                    <div class="row address-inputs">
+                      <div class="col-md-12">
+
+                        <input type="text" placeholder="Description">
+                        <div *ngFor="let progressInfo of progressInfos">
+                          <span>{{ progressInfo.fileName }}</span>
+                          <mat-toolbar class="progress-bar">
+                            <mat-progress-bar
+                              color="accent"
+                              [value]="progressInfo.value"
+                            ></mat-progress-bar>
+                            <span class="progress">{{ progressInfo.value }}%</span>
+                          </mat-toolbar>
+                        </div>
+
+
+
+
+                        <div *ngFor="let progressInfo of progressInfos">
+                          <span>{{ progressInfo.fileName }}</span>
+                          <mat-toolbar class="progress-bar">
+                            <mat-progress-bar
+                              color="accent"
+                              [value]="progressInfo.value"
+                            ></mat-progress-bar>
+                            <span class="progress">{{ progressInfo.value }}%</span>
+                          </mat-toolbar>
+                        </div>
+
+
+                        <mat-form-field  id="ff">
+                          <div>
+                            <mat-toolbar>
+                              <input    matInput [value]="selectedFileNames.length ? selectedFileNames : 'Select Images'" />
+
+
+                            </mat-toolbar>
+
+                            <input
+                              type="file"
+                              id="fileInput"
+                              name="fileInput"
+                              accept="image/*" multiple
+                              (change)="selectFiles($event)"
+                            />
+
+                          </div>
+
+
+                        </mat-form-field>
+
+                    <div>
+                      <img *ngFor='let preview of previews' [src]="preview" class="preview">
+                    </div>
+
+                    <div *ngIf="message.length" class="message">
+                      <ul *ngFor="let msg of message; let i = index">
+                        <li>{{ msg }}</li>
+                      </ul>
+                    </div>
+
+
+
+
+
+
+
+                      </div>
+                    </div>
+
+<!--**************************************************************************************************-->
+
+
+
+
+
+
+<!--**************************************************************************************************-->
+
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <input type="submit" value="ENVOYER" class="btn btn-dark rounded-0 py-2 px-4" id="btncolor">
+                        <span class="submitting"></span>
+                      </div>
+                    </div>
+
+
+
+                  </form>
+
+
+                  <div id="form-message-warning mt-4"></div>
+                  <div id="form-message-success">
+                    Your message was sent, thank you!
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- Footer section -->
+    <br>
+    <app-footer></app-footer>
+    <!-- Footer section end -->
+
+
+
+
+    </body>
+</html>
+
+

@@ -1,0 +1,77 @@
+<app-header></app-header>
+
+
+	<!-- Page info -->
+	<div class="page-top-info">
+		<div class="container">
+			<h4>Your cart</h4>
+			<div class="site-pagination">
+				<a routerLink="">Accueil</a> /
+				<a href="panier">Votre Panier</a>
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- checkout section  -->
+	<section class="checkout-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 order-2 order-lg-1">
+					<form class="checkout-form">
+						<div class="cf-title">Détails Livraison</div>
+
+						<div class="row address-inputs">
+							<div class="col-md-12">
+								<input type="text" placeholder="Addresse" name="adresse" required >
+								<input type="text" placeholder="Address 2" name="adr">
+								<input type="text" placeholder="Ville" required>
+							</div>
+							<div class="col-md-6">
+								<input type="text" placeholder="Code postal" #c required pattern="[0-9]+$">
+							</div>
+							<div class="col-md-6">
+								<input type="text" placeholder="Téléphone" #t required pattern="[0-9]+$">
+							</div>
+						</div>
+
+
+
+						<button class="site-btn submit-order-btn">Passer la commande</button>
+					</form>
+				</div>
+				<div class="col-lg-4 order-1 order-lg-2">
+					<div class="checkout-cart">
+						<h3>Vos Achats</h3>
+						<ul class="product-list">
+							<li>
+								<div class="pl-thumb"><img src="assets/img/cart/100.png" alt=""></div>
+								<h6>ROUGE FIDELE</h6>
+								<p>50.00DT</p>
+							</li>
+							<li>
+								<div class="pl-thumb"><img src="assets/img/cart/200.jpg" alt=""></div>
+								<h6>L'oréal - Accord Parfait Fluide</h6>
+								<p>72.00DT</p>
+							</li>
+
+                            <li>
+								<div class="pl-thumb"><img src="assets/img/cart/300.jpg" alt=""></div>
+								<h6>Essence Beauty Mascara</h6>
+								<p>16.00DT</p>
+							</li>
+						</ul>
+						<ul class="price-list">
+							<li>Total<span>138.00DT</span></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- checkout section end -->
+
+
+<app-footer></app-footer>

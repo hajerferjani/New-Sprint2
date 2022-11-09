@@ -1,0 +1,107 @@
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-house-door"></i>
+          <span id="btntitle">Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span >Poduits</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+              <a routerLink="/showProduct">
+              <i class="bi bi-circle"></i><span>Afficher</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/addProduct">
+              <i class="bi bi-circle"></i><span>Ajouter</span>
+            </a>
+          </li>
+
+        </ul>
+      </li><!-- End Components Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-truck"></i><span>Fournisseurs</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a routerLink="/showFournisseur">
+            <i class="bi bi-circle"></i><span>Afficher</span>
+          </a>
+        </li>
+          <li>
+            <a routerLink="/addFournisseur">
+              <i class="bi bi-circle"></i><span>Ajouter</span>
+            </a>
+          </li>
+
+            <a routerLink="/mailFournisseur">
+              <i class="bi bi-circle"></i><span>Envoyer Mail</span>
+            </a>
+
+        </ul>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-cart-check"></i><span>Commandes</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+
+            <a routerLink="/listeCommandes">
+              <i class="bi bi-circle"></i><span>Consulter</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Tables Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-card-checklist"></i><span>Reclamations</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a routerLink="/consulterreclamation">
+              <i class="bi bi-circle"></i><span>Consulter</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Icons Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link utilisateur" data-bs-target="#utilisateur-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-person"></i><span>Utilisateurs</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="utilisateur-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a routerLink="/gestutilisateur">
+              <i class="bi bi-circle"></i><span>Consulter</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Contact Page Nav -->
+
+      <li class="nav-item">
+        <a routerLink="/publicite" class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-gem"></i><span>Publicités  </span><i ></i>
+        </a>
+
+      </li><!-- End Charts Nav -->
+
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+

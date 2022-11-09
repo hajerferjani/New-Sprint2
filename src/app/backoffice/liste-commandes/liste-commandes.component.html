@@ -1,0 +1,72 @@
+<app-backnavbar></app-backnavbar>
+<app-backsidebar></app-backsidebar>
+
+<main id="main" class="main">
+
+  <div class="pagetitle">
+    <h1>Liste Des Commandes</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">Commandes</li>
+
+      </ol>
+    </nav>
+  </div><!-- End Page Title -->
+
+  <section class="section">
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tableau de toutes les commandes</h5>
+
+            <!-- Table with stripped rows -->
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Id Client</th>
+                  <th scope="col">Nombre Produits</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Etat</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>345</td>
+                  <td>3</td>
+                  <td>04/11/2022</td>
+                  <td>En cours</td>
+                  <td><a routerLink="/detailsCommandes" class="btn btn-primary rounded-pill">Détails</a></td>
+                  <td>  <div class="btn btn-primary rounded-pill">Supprimer </div></td>
+                  <td>  <div class="btn btn-primary rounded-pill">Traiter</div></td>
+                  
+
+                  
+                </tr>
+
+              </tbody>
+            </table>
+            <!-- End Table with stripped rows -->
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </section>
+
+</main><!-- End #main -->
+
+
+
+
+
+<app-backfooter></app-backfooter>

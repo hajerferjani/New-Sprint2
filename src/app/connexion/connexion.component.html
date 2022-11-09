@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<app-header></app-header>
+
+<body>
+    <!-- Page info -->
+  <div class="page-top-info">
+    <div class="container">
+      <h4 >Votre compte</h4>
+      <div class="site-pagination">
+        <a href="">Acceuil</a> /
+        <a href="/connexion" >Se Connecter</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+
+      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+
+              <div class="card mb-3">
+
+                <div class="card-body">
+                  <div class="pt-4 pb-2">
+                    <h5 class="card-title text-center pb-0 fs-4"  id="btntitle">Connectez-vous à votre compte</h5>
+                    <p class="text-center small">Entrez votre Email et votre mot de passe pour vous connecter</p>
+
+                  </div>
+            <div class="col-12">
+
+                    <form class="contact-form">
+
+
+                        <input type="text" placeholder="Email" >
+                        <input type="password" name="password" class="form-control" id="yourPassword" placeholder="Mot de passe" required>
+                        <div class="col-12">
+                        <button class="site-btn" id="btncolor" routerLink="/profile">CONNEXION</button><br> <br>
+                        </div>
+                        <a routerLink="/forgetpassword" id="title"> Mot de passe oublié ?</a>
+                        <div class="col-12">
+                            <p class="small mb-0">Vous n'avez pas de compte ?  <a routerLink="/register" id="btntitle">Créer un compte</a></p>
+                          </div>
+                    </form>
+                </div>
+            </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+<app-footer></app-footer>
+</body>
+
+</html>
+
