@@ -4,7 +4,7 @@
 <main id="main" class="main">
 
   <div class="pagetitle">
-    <h1>Ajouter Fournisseur</h1>
+    <h1>Modifier Fournisseur</h1>
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -20,40 +20,40 @@
 
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Nouveau Fournisseur</h5>
+            <h5 class="card-title">Modifier Fournisseur</h5>
 
             <!-- General Form Elements -->
-            <form>
-              <div class="row mb-3">
+            <form  [formGroup]="updateForm">
+             <div class="row mb-3">
                 <label for="inputText" class="col-sm-2 col-form-label">Nom</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control"  formControlName="nom" required>
                 </div>
               </div>
               <div class="row mb-3">
                 <label for="inputText" class="col-sm-2 col-form-label">Adresse</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-              <div class="row mb-3">
-                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control">
+                  <input type="text" class="form-control"formControlName="adresse" required>
                 </div>
               </div>
               <div class="row mb-3">
                 <label for="inputText" class="col-sm-2 col-form-label">Numero Telephone </label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" formControlName="telephone" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" formControlName="email" required>
                 </div>
               </div>
 
 
               <div class="row mb-3">
                 <label class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10">
-                  <button type="submit" class="btn btn-primary">Ajouter</button>
+                <div class="col-sm-10"   (click)="onUpdate()"  *ngIf="getId">
+                  <button type="submit" class="btn btn-primary">Modifier</button>
                 </div>
               </div>
 
@@ -72,4 +72,3 @@
 
 
 <app-backfooter></app-backfooter>
-

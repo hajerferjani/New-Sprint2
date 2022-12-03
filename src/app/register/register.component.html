@@ -4,6 +4,7 @@
 <app-header></app-header>
 
 <body>
+
     <!-- Page info -->
   <div class="page-top-info">
     <div class="container">
@@ -35,10 +36,11 @@
             <div class="col-12">
 
                     <form class="contact-form">
+
                         <input type="text" placeholder="nom">
                         <input type="text" placeholder="prenom" >
                         <input type="date" class="form-control" >
-                        <input type="number" placeholder="Téléphone" >
+                        <input type="text" placeholder="Téléphone" >
                         <input type="text" placeholder="Ville" >
                         <input type="text" placeholder="adresse" >
                         <input type="text" placeholder="Email" >
@@ -48,7 +50,17 @@
                         </div>
                         <div class="col-12">
                             <p class="small mb-0">Vous avez déjà un compte? <a routerLink="/connexion" id="btntitle">Connexion</a></p>
-                          </div>
+
+                          </div><div class="row">
+                            <mat-form-field class="example-full-width" >
+                                <mat-label>First Name</mat-label>
+                                <input type="text" matInput [formControl]="firstnameFormControl">
+                                <mat-error *ngIf="firstnameFormControl.hasError('required')">
+                                  First Name is <strong>required</strong>
+                                </mat-error>
+                              </mat-form-field>
+                        </div>
+
                     </form>
                 </div>
             </div>

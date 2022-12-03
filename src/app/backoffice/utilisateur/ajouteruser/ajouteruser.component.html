@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<body>
+
+ <app-backnavbar></app-backnavbar>
+
+
+
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Profile</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"> Ajouter Utilisateur</li>
+
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section profile">
+      <div class="row">
+        <div class="col-xl-4">
+
+          <div class="card">
+
+            <div class="card-body profile-card pt-4 d-flex flex-column align-items-center" >
+
+              <div class="row">
+                <div class="small-12 medium-2 large-2 columns">
+
+                    <img class="profile-pic" src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"  >
+
+
+                  <div class="p-image" >
+                    <i class="fa fa-camera upload-button"></i>
+                     <input class="file-upload" type="file" accept="image/*"  />
+                  </div>
+
+                  <h2>Tasnim jamazi</h2>
+
+               </div>
+             </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-xl-8">
+
+          <div class="card">
+            <div class="card-body pt-3">
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered">
+
+                <li class="nav-item">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Ajouter Utilisateur</button>
+                </li>
+
+
+
+              </ul>
+              <div class="tab-content pt-2">
+
+                <div class="tab-pane fade show active profile-overview" id="profile-overview">
+
+         <!-- Profile add Form -->
+         <form #f="ngForm">
+
+            <div class="row mb-3">
+              <label for="nom" class="col-md-4 col-lg-3 col-form-label">Nom </label>
+              <div class="col-md-8 col-lg-9">
+                <input name="nom" type="text" class="form-control" id="nom"  ngModel>
+              </div>
+            </div>
+            <div class="row mb-3">
+                <label for="prenom" class="col-md-4 col-lg-3 col-form-label"> Prénom</label>
+                <div class="col-md-8 col-lg-9">
+                  <input name="prenom" type="text" class="form-control" id="prenom" ngModel>
+                </div>
+              </div>
+
+
+            <div class="row mb-3">
+              <label for="inputDate" class="col-md-4 col-lg-3 col-form-label">Date de naissance</label>
+              <div class="col-md-8 col-lg-9">
+              </div>
+            </div>
+
+
+
+
+            <div class="row mb-3">
+              <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Téléphone</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="telephone" type="text" class="form-control" id="Phone"  ngModel>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="Country" class="col-md-4 col-lg-3 col-form-label">ville</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="ville" type="text" class="form-control" id="Country"  ngModel>
+              </div>
+            </div>
+
+
+            <div class="row mb-3">
+              <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="email" type="email" class="form-control" id="Email"  ngModel>
+              </div>
+            </div>
+            <div class="row mb-3">
+                <label for="Password" class="col-md-4 col-lg-3 col-form-label">Mot de passe
+              </label>
+                <div class="col-md-8 col-lg-9">
+                  <input name="password" type="password" class="form-control" id="Password" ngModel>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary"   (click)="save(f.value)">
+               Ajouter Utilisateur</button>
+            </div>
+          </form><!-- End Profile add Form -->
+
+
+                </div>
+
+
+
+
+
+              </div><!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+  </main><!-- End #main -->
+
+
+
+
+
+
+  <app-backfooter></app-backfooter>
+  <app-backsidebar></app-backsidebar>
+
+</body>
+
+</html>
